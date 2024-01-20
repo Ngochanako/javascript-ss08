@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a= "The quick brown fox jumped over the lazy dog"
+        let list_word=a.split(" ");
+        let n=0;
+        let word;
+        for(let i=0;i<list_word.length;i++){
+            if(n<list_word[i].length) {
+                n=list_word[i].length;
+                word=list_word[i];
+            }
+        }
+        console.log(word);
+    </script>
+</body>
+</html>

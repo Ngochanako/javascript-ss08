@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fakeFilter([1,2,3,4],function(n){
+            if(n%2==0){
+                return true;
+            }
+            return false;
+        })
+        function fakeFilter(a,check){
+            var newAray=[];
+            for(let i=0;i<a.length;i++){
+                if(check(a[i])) {
+                    newAray.push(a[i]);
+                }
+            }
+            console.log(newAray)
+        } 
+    </script>
+</body>
+</html>

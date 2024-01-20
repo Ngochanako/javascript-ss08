@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        sumZero([-1, 0, 1, 2]) // [-1, 1]
+        sumZero([1, 2, 3]) // undefined
+        function sumZero(a){
+            for(let i=0;i<a.length-1;i++){
+                if(a[i]<0){
+                    for(let j=i+1;j<a.length;j++){
+                        if(a[i]==-a[j]){
+                            return console.log(a[i],a[j]);
+                        }
+                    }
+                } else{
+                    return console.log("undefined");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

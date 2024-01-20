@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ham reduce truyen vao cac tham so:
+        total: bắt buộc,là giá trị ban đầu hoặc gá trị trả về trước đó của hàm
+        currentValue: bắt buộc là giá trị phần tử hiện tại
+        currentIndex: ko bắt buộc, là chỉ số phần tử hiện tại
+        arr: ko bắt buộc, là mảng chứa phần tử
+        initialValue: ko bắt buộc, là giá trị ban đầu 
+        array.reduce(callback(total, currentValue, currentIndex, arr), initialValue)
+        fakeReduce(arr,callback,intialValue){
+            let accumulator=initialValue;
+            for(let i=0;i<arr.length;i++){
+                accumulator=callback(accumulator,arr[i],i,array)
+            }
+            return accumulator;
+        }
+    </script>
+</body>
+</html>
